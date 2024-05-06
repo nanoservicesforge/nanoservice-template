@@ -1,0 +1,8 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nanoservices-utils = "0.1.2"
+kernel = { path = "../kernel" }
