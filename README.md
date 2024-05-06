@@ -7,7 +7,8 @@ This Nanoservice can be directly compiled into another server or ran as a standa
 - Tokio (tcp)
 
 The core can also be directly compiled into whatever rust project you have. Below are the installation configs
-for different frameworks and the core.
+for different frameworks and the core. The calc example code was coded by [Jimmy Calahorrano](https://www.linkedin.com/in/jcalahor/) 
+and we decided to lift the example into the standard example for a nanoservice. 
 
 ## Core
 If you don't want to expose the server to external traffic but want another server to compile this server into the binary and
