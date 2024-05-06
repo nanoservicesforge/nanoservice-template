@@ -56,7 +56,7 @@ kernel = { entrypoint = "kernel", package = "kernel", name = "calc-server-kernel
 ```
 
 After running the `nanoforge prep` command in the root of your project where the `Cargo.toml` is located, you will be able
-to access the core functions in your project with `use::calc_server` and the kernel which is the structs for your functions
+to access the Actix functions in your project with `use::calc_server` and the kernel which is the structs for your functions
 with `use::calc_server_kernel`.
 
 ## Axum
@@ -87,7 +87,7 @@ kernel = { entrypoint = "kernel", package = "kernel", name = "calc-server-kernel
 ```
 
 After running the `nanoforge prep` command in the root of your project where the `Cargo.toml` is located, you will be able
-to access the core functions in your project with `use::calc_server` and the kernel which is the structs for your functions
+to access the Axum functions in your project with `use::calc_server` and the kernel which is the structs for your functions
 with `use::calc_server_kernel`.
 
 ## Tokio TCP
@@ -118,5 +118,5 @@ kernel = { entrypoint = "kernel", package = "kernel", name = "calc-server-kernel
 ```
 
 After running the `nanoforge prep` command in the root of your project where the `Cargo.toml` is located, you will be able
-to access the core functions in your project with `use::calc_server` and the kernel which is the structs for your functions
+to access the TCP routing functions in your project with `use::calc_server` and the kernel which is the structs for your functions
 with `use::calc_server_kernel`.
