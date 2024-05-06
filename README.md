@@ -11,6 +11,7 @@ for different frameworks and the core. The calc example code was coded by [Jimmy
 and we decided to lift the example into the standard example for a nanoservice. 
 
 ## Core
+
 If you don't want to expose the server to external traffic but want another server to compile this server into the binary and
 call it directly then just compiling the core is enough. Below is the config for compiling the core into your project:
 
@@ -54,6 +55,10 @@ package = "actix-server"
 kernel = { entrypoint = "kernel", package = "kernel", name = "calc-server-kernel" }
 ```
 
+After running the `nanoforge prep` command in the root of your project where the `Cargo.toml` is located, you will be able
+to access the core functions in your project with `use::calc_server` and the kernel which is the structs for your functions
+with `use::calc_server_kernel`.
+
 ## Axum
 
 ### Running Axum
@@ -81,6 +86,10 @@ package = "axum-server"
 kernel = { entrypoint = "kernel", package = "kernel", name = "calc-server-kernel" }
 ```
 
+After running the `nanoforge prep` command in the root of your project where the `Cargo.toml` is located, you will be able
+to access the core functions in your project with `use::calc_server` and the kernel which is the structs for your functions
+with `use::calc_server_kernel`.
+
 ## Tokio TCP
 
 ### Running Tokio
@@ -107,3 +116,7 @@ entrypoint = "servers/tcp"
 package = "tcp-server"
 kernel = { entrypoint = "kernel", package = "kernel", name = "calc-server-kernel" }
 ```
+
+After running the `nanoforge prep` command in the root of your project where the `Cargo.toml` is located, you will be able
+to access the core functions in your project with `use::calc_server` and the kernel which is the structs for your functions
+with `use::calc_server_kernel`.
